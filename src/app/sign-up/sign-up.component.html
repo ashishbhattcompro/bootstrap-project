@@ -1,58 +1,47 @@
-<div class="card-body">
-  <div class="px-3 mb-0 h4">Sign up</div>
-  <form class="px-3 py-3">
-    <div class="mb-3">
-      <label for="exampleFormEmail1" class="form-label">Email</label>
-      <input
-        type="email"
-        class="form-control"
-        id="exampleFormEmail1"
-        placeholder="email@example.com"
-      />
+<div class="container">
+  <div class="row align-items-center vh-100">
+    <div class="col-4 mx-auto">
+      <div class="card shadow border">
+        <div class="card-body">
+          <div class="px-3 mb-0 h4">Sign up</div>
+          <form class="px-3 py-3">
+            <div class="mb-3">
+              <label for="exampleFormEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormEmail1" placeholder="email@example.com" required/>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleFormPassword1" placeholder="Password" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom" required/>
+            </div>
+            <div class="form-group mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender-radio" id="maleRadioBtn" required/>
+                <label class="form-check-label" for="maleRadioBtn"> Male </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender-radio" id="femaleRadioBtn" required/>
+                <label class="form-check-label" for="femaleRadioBtn"> Female </label>
+              </div>
+            </div>
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Select country</option>
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="china">China</option>
+              <option value="germany">Germany</option>
+              <option value="other">Other</option>
+            </select>
+            <div>
+              <button type="submit" class="btn btn-primary">SIGN UP</button>
+            </div>
+          </form>
+          <div></div>
+          <div class="px-3 py-2 text-dark text-center">
+            <span>Already a user? </span>
+            <a class="link-dark" href="/">Sign in</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormPassword1" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="exampleFormPassword1"
-        placeholder="Password"
-        data-bs-toggle="tooltip"
-        data-bs-placement="bottom"
-        data-bs-title="Tooltip on bottom"
-      />
-    </div>
-    <div
-      class="btn-group mb-3"
-      role="group"
-      aria-label="Basic radio toggle button group"
-    >
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio1"
-        autocomplete="off"
-        checked
-      />
-      <label class="btn btn-outline-primary" for="btnradio1">Male</label>
-
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio2"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary" for="btnradio2">Female</label>
-    </div>
-    <div>
-      <button type="submit" class="btn btn-primary">SIGN UP</button>
-    </div>
-  </form>
-  <div></div>
-  <div class="px-3 py-2 text-dark text-center">
-    <span>Already a user? </span>
-    <a class="link-dark" href="/">Sign in</a>
   </div>
 </div>

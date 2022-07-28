@@ -4,21 +4,14 @@
   </div>
 </nav>
 
-<div class="container">
-  <div class="row align-items-center vh-100">
-    <div class="col-4 mx-auto">
-      <div class="card shadow border">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="page-footer font-small blue">
+<router-outlet></router-outlet>
+      
+
+<footer class="page-footer fixed-bottom font-small blue">
   <div class="footer-copyright text-start px-3 py-3">© 2022 Copyright:
-    <a class="px-1" href="/">Terms</a>
-    <a class="px-1" href="/">Privacy</a>
+    <a class="px-1" href="terms">Terms</a>
+    <a class="px-1" href="privacy">Privacy</a>
     <a class="px-1" href="/">link3</a>
   </div>
 </footer>
